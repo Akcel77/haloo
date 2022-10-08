@@ -10,7 +10,7 @@ body{
     box-sizing: content-box;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4, h5, h6, a{
     font-family: 'Literata', cursive;
 }
 
@@ -50,14 +50,14 @@ h1{
 
 .navbar .nav-container a {
     text-decoration: none;
-    color: #adbcc4;
+    color: #afc0bc;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 0.7rem;
 }
 
 .navbar .nav-container a:hover{
-    font-weight: bolder;
+    font-style: italic;
 }
 
 .nav-container {
@@ -96,7 +96,7 @@ h1{
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #adbcc4;
+    background: #90cbaa;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -114,8 +114,10 @@ h1{
 }
 
 .navbar .menu-items {
+    margin-top: -10px;
     padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(28, 27, 27, 0.5);
+    box-shadow: inset 0 0 2000px rgb(217, 205, 205);
+    background-color: rgba(31, 56, 34, 0.7);
     height: 100vh;
     width: 100%;
     transform: translate(-150%);
@@ -162,6 +164,12 @@ h1{
 }
 /* END NAV */
 
+
+
+/* CONTACT */
+
+
+/* END CONTACT */
 
 /* KEYFRAMES */
 @keyframes heart {
