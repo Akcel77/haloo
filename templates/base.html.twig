@@ -39,21 +39,22 @@
                         <span class="line line3"></span>
                     </div>
                     <div class="logo">
-
+                        <h3>Haloo</h3>
                     </div>
                     <div class="menu-items ">
-                        <h2 class="text-white display-3">Haloo</h2>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">blogs</a></li>
-                        <li><a href="#">portfolio</a></li>
-                        <li><a href="#">contact</a></li>
+                        <img src="{{ asset('assets/img/logo-no-bg.png') }}" class="img-fluid mx-auto" width="200px" alt="">
+                        <h2 class="display-3 text-white">Haloo</h2>
+                        <li><a href="{{ path('home') }}">Accueil</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Prestations</a></li>
+                        <li><a href="#">Projet</a></li>
+                        <li><a href="{{ path('contact') }}">Contact</a></li>
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div id="hero" class="vh-100" style="background:url('{{ asset('assets/img/banner.jpg') }}') no-repeat;background-size:cover;background-position:top center;">
+        <div id="hero" class="vh-100" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}'">
 
             <div data-aos="fade-right"
                  data-aos-offset="300"
