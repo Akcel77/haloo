@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}Haloo - Créateur de site web{% endblock %}</title>
+        <title>{% block title %}Looha - Créateur de site web{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 
         <!-- CSS -->
@@ -39,13 +39,12 @@
                         <span class="line line3"></span>
                     </div>
                     <div class="logo">
-                        <h3>Haloo</h3>
+
                     </div>
-                    <div class="menu-items ">
-                        <img src="{{ asset('assets/img/logo-no-bg.png') }}" class="img-fluid mx-auto" width="200px" alt="">
-                        <h2 class="display-3 text-white">Haloo</h2>
+                    <div class="menu-items" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}')">
+                        <h2 class="display-3 text-white mb-5">Looha</h2>
                         <li><a href="{{ path('home') }}">Accueil</a></li>
-                        <li><a href="#">A propos</a></li>
+                        <li><a href="{{ path('about') }}">A propos</a></li>
                         <li><a href="#">Prestations</a></li>
                         <li><a href="#">Projet</a></li>
                         <li><a href="{{ path('contact') }}">Contact</a></li>
@@ -54,14 +53,14 @@
             </div>
         </nav>
 
-        <div id="hero" class="vh-100" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}'">
+        <div id="hero" class="vh-100" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}')">
 
             <div data-aos="fade-right"
                  data-aos-offset="300"
                  data-aos-easing="ease-in-sine"
                  data-aos-duration="2000">
                 <h1 class="text-white company-name">
-                    Haloo
+                    Looha
                 </h1>
             </div>
 
