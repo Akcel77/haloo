@@ -29,7 +29,7 @@
     <body>
     <header>
 
-        <nav class="fixed-top">
+        <nav class="fixed-top ">
             <div class="navbar">
                 <div class="container nav-container">
                     <input class="checkbox" type="checkbox" name="" id="" />
@@ -89,6 +89,22 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        let scrollpos = window.scrollY
+        const header = document.querySelector("nav")
+        const header_height = 900
+
+        const add_class_on_scroll = () => header.classList.add("bg-dark")
+        const remove_class_on_scroll = () => header.classList.remove("bg-dark")
+
+        window.addEventListener('scroll', function() {
+            scrollpos = window.scrollY;
+
+            if (scrollpos >= header_height) { add_class_on_scroll() }
+            else { remove_class_on_scroll() }
+
+            console.log(scrollpos)
+        })
     </script>
     </body>
 </html>
