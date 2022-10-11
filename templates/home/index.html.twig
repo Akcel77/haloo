@@ -1,44 +1,86 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Haloo - Créateur de site web{% endblock %}
+{% block title %}Looha - Créateur de site web{% endblock %}
 
 {% block body %}
 
-    <div class="container">
-        <h2>Test</h2>
-        <p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p>
-
-        <img src="{{ asset('assets/img/logo.png') }}" class="img-fluid" alt="">
-        <p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p><p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p>
-        <p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p><p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p><p>Nam architecto soluta et ex. Culpa dolor nulla fuga natus beatae vitae culpa. Deleniti nulla sint sapiente officia non. Aliquam excepturi et harum nihil quibusdam. Architecto magni non ducimus.
-
-            Sit officiis deleniti totam vitae minus. Vitae at commodi et ipsa qui ipsam velit facilis.
-            Dolore modi quam et velit. Incidunt repellat doloremque excepturi dicta eius.
-        </p>
-
-
-
+    <div class="container main-block row mt-5 mx-auto">
+        <h3 class="display-3" >Nos Prestations</h3>
+{#        <p>Vous avez un projet de création de site internet ? Vous souhaitez faire appel à un professionnel pour la création de votre site internet ? Vous êtes au bon endroit !</p>#}
+{#        <p>Notre agence web vous propose des prestations de qualité pour la création de votre site internet. Nous vous accompagnons dans la réalisation de votre projet de création de site internet.</p>#}
+        <!-- BLOCK SITE INTERNET -->
+        <div class="col-lg-6 col-sm-12 mt-5">
+            <p class="display-4">Création de site internet</p>
+            <p>La création d’un site pour son entreprise ou son activité professionnelle va être de se faire connaître dans le domaine ou on exerce sur internet.
+                Il permet d'être visible et de communiquer.
+                Nous vous proposons :<br><br>
+                Création d’un site vitrine. <br>
+                Création d’un site e-commerce. <br>
+                Création d’un site intranet. <br> <br>
+                Autour de cela nous définissons vos besoins et nous créons un site à votre image. Tous les sites sont faits sur mesure et aucun CMS n’est utilisé pour une sécurité optimale et une consommation écologique minimale.
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <img src="{{ asset('assets/img/site.jpg') }}" class="img-fluid rounded-pill" alt="Creation site internet by Eftakher Alam" >
+        </div>
     </div>
 
+    <hr class="w-50 mx-auto my-5">
+
+    <div class="container main-block row mt-5 mx-auto">
+        <!-- BLOCK Référencement SEO -->
+        <div class="col-lg-6 col-sm-12">
+            <img src="{{ asset('assets/img/seobis.jpg') }}" class="img-fluid rounded-pill" alt="Creation site internet by Merakist" >
+        </div>
+        <div class="col-lg-6 col-sm-12 mt-5">
+            <p class="display-4">Référencement SEO</p>
+            <p>Le référencement SEO ou référencement naturel est l’ensemble des points mis en œuvre pour améliorer son positionnement sur les pages de recherche.
+                En définitive il permet :
+                <br><br>
+                Être visible sur les moteurs de recherche. <br>
+                Attirer de nouveaux utilisateurs. <br>
+            </p>
+        </div>
+    </div>
+
+    <hr class="w-50 mx-auto my-5">
+
+    <div class="container main-block row mt-5 mx-auto">
+        <!-- BLOCK Réseaux Sociaux -->
+        <div class="col-lg-6 col-sm-12 mt-5">
+            <p class="display-4">Réseaux Sociaux</p>
+            <p>Aujourd’hui les réseaux sociaux sont un canal de communication important et vous permettent d'être en contact avec une vaste communauté d'utilisateurs à travers le monde.
+                Nous vous proposons :
+                <br><br>
+                Choix des réseaux les plus pertinents en fonction de vos besoins et objectifs. <br>
+                Gestion des réseaux sociaux. <br>
+                Attraction de nouveaux clients.<br>
+                La mise en place d’une stratégie digitale adaptée à vos besoins. <br>
+                Augmenter votre visibilité. <br>
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <img src="{{ asset('assets/img/social.jpg') }}" class="img-fluid rounded-pill" alt="Creation site internet by Merakist" >
+        </div>
+    </div>
+
+    <hr class="w-50 mx-auto my-5">
+
+    <div class="container main-block row mt-5 mx-auto">
+        <!-- BLOCK Identité visuelle -->
+        <div class="col-lg-6 col-sm-12">
+            <img src="{{ asset('assets/img/design.jpg') }}" class="img-fluid rounded-pill" alt="Creation site internet by Merakist" >
+        </div>
+        <div class="col-lg-6 col-sm-12 mt-5">
+            <p class="display-4">Référencement SEO</p>
+            <p>L'identité visuelle est l’image que votre activité, votre univers et que votre entreprise reflète. Nous vous proposons donc en fonction de votre public ciblé et de vos envies :
+                <br><br>
+                Réalisation de votre charte graphique. <br>
+                Réalisation de votre logo. <br>
+                Design de votre site. <br><br>
+                L'identité visuelle est garante de votre identité de marque. Elle permet de conserver une cohérence de votre marque sur tout support confondu.
+            </p>
+        </div>
+    </div>
     
 {% endblock %}
