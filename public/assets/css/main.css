@@ -163,6 +163,10 @@ h1{
 
 /* MAIN */
 
+/*SERVICES*/
+
+/*END SERVICES*/
+
 /* FLOAT BANNER */
 .defile-title {
     margin: 0;
@@ -287,15 +291,13 @@ h1{
     max-width: 90%;
     margin: auto;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
-    0 1px 2px rgba(0, 0, 0, 0.24);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
+    border-radius: 0.5rem;
 }
 
 #left-zone {
@@ -464,23 +466,27 @@ input:checked ~ label {
 }
 
 input:checked ~ label.label_testimonial-1 {
-    color: #d64541;
-    border-right: solid 4px #d64541;
+    color: #000000;
+    padding-right: 1rem;
+    border-right: solid 4px #00b894;
 }
 
 input:checked ~ label.label_testimonial-2 {
-    color: #f5d76e;
-    border-right: solid 4px #f5d76e;
+    color: #000000;
+    padding-right: 1rem;
+    border-right: solid 4px #00b894;
 }
 
 input:checked ~ label.label_testimonial-3 {
-    color: #00b16a;
-    border-right: solid 4px #00b16a;
+    color: #000000;
+    padding-right: 1rem;
+    border-right: solid 4px #00b894;
 }
 
 input:checked ~ label.label_testimonial-4 {
-    color: #f27935;
-    border-right: solid 4px #f27935;
+    color: #000000;
+    padding-right: 1rem;
+    border-right: solid 4px #00b894;
 }
 
 label:first-letter {
@@ -513,10 +519,11 @@ p.testimonialState {
     color: #808080d4;
 }
 
-p.testimonialFrom {
+p.testimonialFrom a{
     margin-top: 5px;
+    padding-bottom: 2rem;
     font-weight: bold;
-    color: #33475c;
+    color: #00b894;
 }
 /* ============== End Testimonial Flexbox ============= */
 
