@@ -10,10 +10,14 @@ body{
     box-sizing: content-box;
 }
 h1, h2, h3, h4, h5, h6, a{
-    font-family: 'Literata', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 p{
     text-align: justify;
+}
+.gloria{
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: left!important;
 }
 h1{
     writing-mode: vertical-lr;
@@ -23,6 +27,14 @@ h1{
 }
 .title-info{
     color: #00b894;
+}
+#hr {
+    color: #000000!important;
+    margin: 0 auto;
+    -webkit-transform:rotate(90deg);
+    width:20px;
+    height:4px;
+    border:1px;
 }
 /* NAV */
 
@@ -162,7 +174,9 @@ h1{
 /* END NAV */
 
 /* MAIN */
-
+main{
+    padding-top: 2rem;
+}
 /*SERVICES*/
 
 /*END SERVICES*/
@@ -488,6 +502,15 @@ input:checked ~ label.label_testimonial-4 {
     padding-right: 1rem;
     border-right: solid 4px #00b894;
 }
+input:checked ~ label.label_testimonial-5 {
+    color: #000000;
+    padding-right: 1rem;
+    border-right: solid 4px #00b894;
+}
+label.label_testimonial-5 a{
+    color: #000000;
+
+}
 
 label:first-letter {
     text-transform: uppercase;
@@ -537,6 +560,29 @@ p.testimonialFrom a{
 
 
 /* END CONTACT */
+
+/* FOOTER */
+.footer-div{
+    height: 30rem;
+    width: 100%;
+}
+.footer-block{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4rem;
+    color: white;
+}
+.footer-block li{
+    list-style: none;
+    margin-top: 1rem;
+    text-align: center;
+}
+.footer-block a{
+    color: white;
+    font-size: 1.4rem;
+
+}
+/* END FOOTER */
 
 /* KEYFRAMES */
 @keyframes heart {
