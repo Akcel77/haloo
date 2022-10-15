@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -27,9 +28,8 @@
         {% endblock %}
     </head>
     <body>
-    <header>
-
-        <nav class="fixed-top ">
+    <header id="header">
+        <nav class="fixed-top" id="nav">
             <div class="navbar">
                 <div class="container nav-container">
                     <input class="checkbox" type="checkbox" name="" id="" />
@@ -45,8 +45,8 @@
                         <img src="{{ asset('assets/img/looha-sm-removebg-preview.png') }}" width="200px" class="mx-auto" alt="">
                         <li><a href="{{ path('home') }}">Accueil</a></li>
                         <li><a href="{{ path('about') }}">A propos</a></li>
-                        <li><a href="#">Prestations</a></li>
-                        <li><a href="#">Projet</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projet">Projet</a></li>
                         <li><a href="{{ path('contact') }}">Contact</a></li>
                     </div>
                 </div>
@@ -81,28 +81,35 @@
     </main>
 
 
-    <footer>
-        <div class="footer-div" style="background-size:cover;background: url('{{ asset('assets/img/footer.jpg') }}');background-position: center;background-repeat: no-repeat;background-size: cover;">
-            <div class="footer-block">
-                <div>
-                    <ul>
-                        <li><a href="{{ path('home') }}">Accueil</a></li>
-                        <li><a href="{{ path('about') }}">A propos</a></li>
-                        <li><a href="#">Prestations</a></li>
-                        <li><a href="#">Projet</a></li>
-                        <li><a href="{{ path('contact') }}">Nous Contacter</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="{{ path('home') }}">Accueil</a></li>
-                        <li><a href="{{ path('about') }}">A propos</a></li>
-                        <li><a href="#">Prestations</a></li>
-                        <li><a href="#">Projet</a></li>
-                        <li><a href="{{ path('contact') }}">Contact</a></li>
-                    </ul>
-                </div>
+    <footer class="footer-basic">
+        <div class="footer-div" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}');background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="social">
+                <a href="#">
+                    <img src="{{ asset('assets/img/instagram.png') }}" width="50px" alt="Icon instagram">
+                </a>
+                <a href="#">
+                    <img src="{{ asset('assets/img/linkedin.png') }}" width="50px" alt="Icon linkedin">
+                </a>
+                <a href="#">
+                    <img src="{{ asset('assets/img/facebook.png') }}" width="50px" alt="Icon facebook">
+                </a>
+                <a href="#">
+                    <img src="{{ asset('assets/img/whatsapp.png') }}" width="50px" alt="Icon whatsapp">
+                </a>
             </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#header">Accueil</a></li>
+                <li class="list-inline-item"><a href="{{ path('about') }}">A propos</a></li>
+                <li class="list-inline-item"><a href="#services">Services</a></li>
+                <li class="list-inline-item"><a href="#projet">Projets</a></li>
+                <li class="list-inline-item"><a href="{{ path('contact') }}">Contact</a></li>
+            </ul>
+            <ul class="list-inline-terms pt-2">
+                <li class="list-inline-item-terms"><a href="#header">Politique de confidentialité</a></li>
+                <li class="list-inline-item-terms"><a href="{{ path('about') }}">Mentions légales</a></li>
+            </ul>
+            <p class="copyright">Looha © 2022</p>
+
         </div>
     </footer>
 
