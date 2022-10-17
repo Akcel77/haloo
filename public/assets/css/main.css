@@ -590,6 +590,7 @@ textarea {
     max-width: 60%;
     margin: 60px auto;
     position: relative;
+    background-color: #edf3e6;
 }
 
 form {
