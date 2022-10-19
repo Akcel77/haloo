@@ -3,7 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}Looha - Créateur de site web{% endblock %}</title>
+        <script src="{{ asset('assets/js/tarteaucitron/tarteaucitron.js') }}"></script>
+
+        <script type="text/javascript">
+            tarteaucitron.init({
+                "privacyUrl": "https://travelwithyourbike.com/politic", /* Privacy policy url */
+                "bodyPosition": "bottom", /* or top to bring it as first element for accessibility */
+
+                "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+                "cookieName": "tarteaucitron", /* Cookie name */
+
+                "orientation": "middle", /* Banner position (top - bottom) */
+
+                "groupServices": false, /* Group services by category */
+                "serviceDefaultState": "wait", /* Default state (true - wait - false) */
+
+                "showAlertSmall": false, /* Show the small banner on bottom right */
+                "cookieslist": true, /* Show the cookie list */
+
+                "closePopup": false, /* Show a close X on the banner */
+
+                "showIcon": false, /* Show cookie icon to manage cookies */
+                //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+                "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+                "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+                "DenyAllCta" : true, /* Show the deny all button */
+                "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+                "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+
+                "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+                "removeCredit": false, /* Remove credit link */
+                "moreInfoLink": true, /* Show more info link */
+
+                "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+                "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+
+                //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+
+                "readmoreLink": "", /* Change the default readmore link */
+
+                "mandatory": true, /* Show a message about mandatory cookies */
+                "mandatoryCta": true /* Show the disabled accept button when mandatory on */
+            });
+            tarteaucitron.user.gtagUa = 'G-QG65G6G652';
+            // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
+            tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+            (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        </script>
+
+        <title>{% block title %}Looha - Agence web et communication{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
 
         <!-- CSS -->
@@ -48,8 +99,8 @@
                         <img src="{{ asset('assets/img/looha-sm-removebg-preview.png') }}" width="200px" class="mx-auto" alt="">
                         <li><a href="{{ path('home') }}">Accueil</a></li>
                         <li><a href="{{ path('about') }}">A propos</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projet">Projet</a></li>
+                        <li><a href="{{ path('home', {'_fragment': 'services'}) }}">Services</a></li>
+                        <li><a href="{{ path('home', {'_fragment': 'projet'}) }}">Projet</a></li>
                         <li><a href="{{ path('contact') }}">Contact</a></li>
                     </div>
                 </div>
@@ -100,10 +151,10 @@
                 </a>
             </div>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#header">Accueil</a></li>
+                <li class="list-inline-item"><a href="{{ path('home', {'_fragment': 'header'}) }}">Accueil</a></li>
                 <li class="list-inline-item"><a href="{{ path('about') }}">A propos</a></li>
-                <li class="list-inline-item"><a href="#services">Services</a></li>
-                <li class="list-inline-item"><a href="#projet">Projets</a></li>
+                <li class="list-inline-item"><a href="{{ path('home', {'_fragment': 'services'}) }}">Services</a></li>
+                <li class="list-inline-item"><a href="{{ path('home', {'_fragment': 'projet'}) }}">Projets</a></li>
                 <li class="list-inline-item"><a href="{{ path('contact') }}">Contact</a></li>
             </ul>
             <ul class="list-inline-terms pt-2">
