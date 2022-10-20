@@ -3,7 +3,13 @@
 {% block title %}Contact - Looha{% endblock %}
 {% block hero %}{% endblock %}
 {% block body %}
+    {% for message in app.flashes('notice')  %}
+        <div class="alert alert-info mx-auto w-50">
+            {{ message }}
+        </div>
+    {% endfor %}
     <div id="container-contact">
+
         <p class="display-3 text-center py-4">Nous Contacter</p>
         <div class="underline">
         </div>
