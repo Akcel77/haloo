@@ -57,14 +57,14 @@
         <!-- META -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Agence web et communication, basée dans le lot disponible partout pour vous !" />
+        <meta name="description" content="Looha, Agence web et communication, basée dans le lot disponible partout pour vous !" />
         <link rel="canonical" href="https://looha.io" />
         <meta name="Language" CONTENT="fr" />
         <meta name="publisher" content="Diagne Axel" />
-        <meta name="keywords" content="Agence web, Agence communication, e-commerce, e-commerce Cahors, e commerce Cahors, e-commerce Lot, e commerce Lot, Agence web Cahors, Agence web Lot, Agence communication Lot, Agence communication Cahors, Lot, Cahors, creation site web, creation intranet lot, creation site web lot, creation site web Cahors, reseaux sociaux, reseaux sociaux Cahors, reseaux sociaux Lot, Création d’un site vitrine, Création d’un site vitrine Cahors, Attirer de nouveaux utilisateurs Cahors, charte graphique, design site, design logo" />
+        <meta name="keywords" content="Looha, Agence web, Agence communication, e-commerce, e-commerce Cahors, e commerce Cahors, e-commerce Lot, e commerce Lot, Agence web Cahors, Agence web Lot, Agence communication Lot, Agence communication Cahors, Lot, Cahors, creation site web, creation intranet lot, creation site web lot, creation site web Cahors, reseaux sociaux, reseaux sociaux Cahors, reseaux sociaux Lot, Création d’un site vitrine, Création d’un site vitrine Cahors, Attirer de nouveaux utilisateurs Cahors, charte graphique, design site, design logo" />
         <!-- OG -->
 
-        <meta property="og:title" content="Agence web et communication, basée dans le lot disponible partout pour vous !" />
+        <meta property="og:title" content="Looha, Agence web et communication, basée dans le lot disponible partout pour vous !" />
         <meta property="og:url" content="https://looha.io" />
         <meta property="og:image" content="{{  asset('assets/img/LoohaMeta.png') }}" />
         <meta property="og:site_name" content="Looha" />
@@ -109,10 +109,10 @@
                         <span class="line line3"></span>
                     </div>
                     <div class="logo">
-                        <img src="{{ asset('assets/img/looha-sm-removebg-preview.png') }}" width="100px" alt="">
+                        <p class="alo">Looha</p>
                     </div>
                     <div class="menu-items" style="background-size:cover;background: url('{{ asset('assets/img/banner.jpg') }}')">
-                        <img src="{{ asset('assets/img/looha-sm-removebg-preview.png') }}" width="200px" class="mx-auto" alt="">
+                        <p class="alo display-3 text-center">Looha</p>
                         <li><a href="{{ path('home') }}">Accueil</a></li>
                         <li><a href="{{ path('about') }}">A propos</a></li>
                         <li><a href="{{ path('home', {'_fragment': 'services'}) }}">Services</a></li>
@@ -192,7 +192,9 @@
         const header_height = 900
 
         const add_class_on_scroll = () => header.classList.add("bg-dark")
+        const add_dis_on_scroll = () => header.classList.add("d-none")
         const remove_class_on_scroll = () => header.classList.remove("bg-dark")
+        const remove_dis_on_scroll = () => header.classList.remove("d-none")
 
         window.addEventListener('scroll', function() {
             scrollpos = window.scrollY;
