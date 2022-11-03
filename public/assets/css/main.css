@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Aloja';
+    src: url('alo.otf');
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,8 +13,16 @@ body{
     background: #3A3A42;
     box-sizing: content-box;
 }
-h1, h2, h3, h4, h5, h6, a{
+h1{
+    font-family: 'Aloja', monospace;
+}
+h2, h3, h4, h5, h6, a{
     font-family: 'Roboto Mono', monospace;
+}
+.alo{
+    font-family: 'Aloja', monospace;
+    font-size: 2rem;
+    color:  #00b894;
 }
 p{
     text-align: justify;
