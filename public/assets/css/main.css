@@ -195,6 +195,9 @@ h1{
 main{
     padding-top: 2rem;
 }
+#defs{
+    margin-top: 5rem!important;
+}
 /*SERVICES*/
 
 /*END SERVICES*/
@@ -764,6 +767,9 @@ textarea {
 
     #form_button {
         padding: 15px 25px;
+    }
+    #flex-container{
+        height: 160vh;
     }
 }
 
