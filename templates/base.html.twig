@@ -116,7 +116,7 @@
                         <li><a href="{{ path('home') }}">Accueil</a></li>
                         <li><a href="{{ path('about') }}">A propos</a></li>
                         <li><a href="{{ path('home', {'_fragment': 'services'}) }}">Services</a></li>
-                        <li><a href="{{ path('home', {'_fragment': 'projet'}) }}">Projet</a></li>
+                        <li><a href="{{ path('home', {'_fragment': 'projet'}) }}">Projets</a></li>
                         <li><a href="{{ path('contact') }}">Contact</a></li>
                     </div>
                 </div>
@@ -198,9 +198,16 @@
 
             if (scrollpos >= header_height) { add_class_on_scroll() }
             else { remove_class_on_scroll() }
-
-            console.log(scrollpos)
         })
+
+        //Close navbar on link click no jquery
+        const navLinks = document.querySelectorAll('.menu-items li a')
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.checkbox').checked = false
+            })
+        })
+
     </script>
     </body>
 </html>
